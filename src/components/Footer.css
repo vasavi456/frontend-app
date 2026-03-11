@@ -1,0 +1,6 @@
+.App-Footer{
+  background-color: rgb(255, 0, 179);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}

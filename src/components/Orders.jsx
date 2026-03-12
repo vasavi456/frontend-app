@@ -7,8 +7,8 @@ const Orders = () => {
 
   const fetchOrders = async () => {
     try {
-      const {data} = await axios.get("/api/orders/user-orders");
-      setOrders(data.orders);
+      const res = await axios.get("http://localhost:5000/api/orders/user-orders");
+      setOrders(res.data);
     } catch (error) {
       console.log(error);
     }
